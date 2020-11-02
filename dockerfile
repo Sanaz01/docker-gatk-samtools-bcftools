@@ -4,7 +4,10 @@ FROM broadinstitute/gatk:4.1.8.0
 
 RUN apt-get update && apt-get -y upgrade && \
 	apt-get install -y build-essential wget \
-		libncurses5-dev zlib1g-dev libbz2-dev liblzma-dev libcurl3-dev autoconf automake make gcc perl libssl-dev libperl-dev libgsl0-dev
+		libncurses5-dev zlib1g-dev libbz2-dev liblzma-dev \
+		libcurl3-dev autoconf automake make gcc perl libssl-dev \
+		libperl-dev libgsl0-dev parallel
+		
 WORKDIR /
 RUN wget https://github.com/samtools/samtools/releases/download/1.10/samtools-1.10.tar.bz2 && \
 	tar jxf samtools-1.10.tar.bz2 && \
