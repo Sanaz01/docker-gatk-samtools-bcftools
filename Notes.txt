@@ -1,0 +1,6 @@
+"broadinstitute/gatk:4.1.8.0" - samtools 1.7 using htslib 1.7-2
+                              - bedtools_v2.26.0         
+
+
+ "broadinstitute/gatk:4.5.0.0" - samtools 1.13, using htslib 1.13+ds 
+                               - bedtools v2.30.0        
